@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/eklebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="257dp"
+        android:onClick="sqlClick"
+        android:text="EKLE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/yiltxt"
+        app:layout_constraintStart_toStartOf="@+id/textView" />
+
+
+    <Button
+        android:id="@+id/silbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="29dp"
+        android:onClick="sqlClick"
+        android:text="SİL"
+        app:layout_constraintBottom_toTopOf="@+id/araclarbtn"
+        app:layout_constraintStart_toEndOf="@+id/araclarbtn" />
+
+    <EditText
+        android:id="@+id/markatxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="MARKA ADI"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#831111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/modeltxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="15dp"
+        android:ems="10"
+        android:hint="MODEL ADI"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHighlight="#701212"
+        android:textColorHint="#811B1B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/markatxt" />
+
+    <EditText
+        android:id="@+id/fiyattxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="FİYAT"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#7C1A1A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/modeltxt" />
+
+    <Button
+        android:id="@+id/araclarbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="21dp"
+        android:onClick="sqlClick"
+        android:text="ARAÇLAR"
+        app:layout_constraintStart_toEndOf="@+id/eklebtn"
+        app:layout_constraintTop_toBottomOf="@+id/eklebtn" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginBottom="16dp"
+        android:text="SÜMEYYE KARAKAŞ 19410051072"
+        android:textColor="#E91E63"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="101dp"
+        android:text="ARAÇ KONTROL SİSTEMİ"
+        android:textColor="#811010"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/markatxt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/yiltxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="ÜRETİM YILI"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#852323"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fiyattxt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">kullanıcı_girisli_arac_kontrol_sistemi</string>
+    <string name="textview">TextView</string>
+</resources>
